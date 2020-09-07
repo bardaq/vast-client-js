@@ -10,6 +10,9 @@ export class Ad {
     this.survey = null;
     this.errorURLTemplates = [];
     this.impressionURLTemplates = [];
+    this.viewableImpressionURLTemplates = [];
+    this.viewableUndeterminedImpressionURLTemplates = [];
+    this.notViewableImpressionURLTemplates = [];
     this.creatives = [];
     this.extensions = [];
   }

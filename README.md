@@ -26,7 +26,7 @@ Then import the components you need.
 ### VASTClient
 If you need to fetch and parse VAST documents, you can use the **VASTClient**:
 ```javascript
-import { VASTClient } from 'vast-client'
+import { VASTClient } from '@bardaq/vast-client'
 
 const vastClient = new VASTClient();
 
@@ -43,7 +43,7 @@ In addition to fetching and parsing a VAST resource, **VASTClient** provides opt
 ### VASTParser
 To directly parse a VAST XML you can use the **VASTParser**:
 ```Javascript
-import { VASTParser } from 'vast-client'
+import { VASTParser } from '@bardaq/vast-client'
 
 const vastParser = new VASTParser();
 
@@ -59,7 +59,7 @@ vastParser.parseVAST(vastXml)
 ### VASTTracker
 To track the execution of an ad use the **VASTTracker**:
 ```Javascript
-import { VASTTracker } from 'vast-client'
+import { VASTTracker } from '@bardaq/vast-client'
 
 const vastTracker = new VASTTracker(vastClient, ad, creative);
 
@@ -103,7 +103,7 @@ var vastTracker = new VAST.VASTTracker();
 A pre-bundled version for node is available too: [`vast-client-node.js`](dist/vast-client-node.js) or [`vast-client-node.min.js`](dist/vast-client-node.min.js) [minified].
 
 ```javascript
-const VAST = require('vast-client')
+const VAST = require('@bardaq/vast-client')
 
 const vastClient = new VAST.VASTClient();
 const vastParser = new VAST.VASTParser();

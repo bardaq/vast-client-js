@@ -306,6 +306,51 @@ describe('VASTTracker', function() {
         });
       });
 
+      describe('#trackVievableImpression', () => {
+        before(done => {
+          _eventsSent = [];
+          util.track = function(URLTemplates, variables) {
+            _eventsSent.push(this.resolveURLTemplates(URLTemplates, variables));
+          };
+          this.Tracker.trackViewableImpression();
+          done();
+        });
+
+        it('should have called viewable impression URLs', () => {
+          _eventsSent[0].length.should.eql(1);
+        });
+      });
+
+      describe('#trackViewUndeterminedImpression', () => {
+        before(done => {
+          _eventsSent = [];
+          util.track = function(URLTemplates, variables) {
+            _eventsSent.push(this.resolveURLTemplates(URLTemplates, variables));
+          };
+          this.Tracker.trackViewableUndeterminedImpression();
+          done();
+        });
+
+        it('should have called viewable undetermined impression URLs', () => {
+          _eventsSent[0].length.should.eql(1);
+        });
+      });
+
+      describe('#trackNotViewableImpression', () => {
+        before(done => {
+          _eventsSent = [];
+          util.track = function(URLTemplates, variables) {
+            _eventsSent.push(this.resolveURLTemplates(URLTemplates, variables));
+          };
+          this.Tracker.trackNotViewableImpression();
+          done();
+        });
+
+        it('should have called not viewable impression URLs', () => {
+          _eventsSent[0].length.should.eql(1);
+        });
+      });
+
       describe('#errorWithCode', () => {
         before(() => {
           util.track = function(URLTemplates, variables, options) {

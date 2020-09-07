@@ -38,7 +38,7 @@ constructor()
 #### Example
 To get an instance of `VASTParser`, simply import it and create one using the constructor:
 ```Javascript
-import { VASTParser } from 'vast-client'
+import { VASTParser } from '@bardaq/vast-client'
 
 // With default values
 const vastParser = new VASTParser();

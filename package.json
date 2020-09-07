@@ -1,5 +1,5 @@
 {
-  "name": "vast-client",
+  "name": "vast-client-fork",
   "author": "Olivier Poitrey <rs@dailymotion.com>",
   "contributors": [
     "Elia Maino <eliamaino@gmail.com>"
@@ -27,6 +27,7 @@
   "browser": {
     "dist/vast-client.min.js": "dist/vast-client.min.js"
   },
+  "types": "./index.d.ts",
   "scripts": {
     "build": "rollup -c",
     "lint": "eslint .",

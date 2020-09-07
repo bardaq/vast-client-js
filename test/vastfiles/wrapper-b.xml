@@ -7,6 +7,14 @@
       <Error>http://example.com/wrapperB-error</Error>
       <Impression>http://example.com/wrapperB-impression1</Impression>
       <Impression>http://example.com/wrapperB-impression2</Impression>
+      <ViewableImpression id="SMART AdServer">
+        <Viewable>
+          <![CDATA[ https://www8.smartadserver.com/track/action?pid=1237267&iid=9471918&cid=25722085&sid=[VIC_TIMESTAMP]&key=viewcount&num1=0&num3=1&ab=1&abpos=[ABPOS]&fmtid=57920&ctid=&ctn=&ctt=&ctc=&ctd=0&cts=0&cte=0&ctr=&ctpid=&ctp=&ctdid=&ctdn=&ctxid=&ctmsid=&ctk=&vph=-1&vpw=-1&vit=0&vct=0&vrn= ]]>
+        </Viewable>
+        <ViewUndetermined>
+          <![CDATA[ https://www8.smartadserver.com/track/action?pid=1237267&iid=9471918&cid=25722085&sid=[VIC_TIMESTAMP]&key=viewUndetermined&num1=0&num3=1&ab=1&abpos=[ABPOS]&fmtid=57920&ctid=&ctn=&ctt=&ctc=&ctd=0&cts=0&cte=0&ctr=&ctpid=&ctp=&ctdid=&ctdn=&ctxid=&ctmsid=&ctk=&vph=-1&vpw=-1&vit=0&vct=0&vrn= ]]>
+        </ViewUndetermined>
+      </ViewableImpression>
       <Creatives>
         <Creative>
           <CompanionAds>

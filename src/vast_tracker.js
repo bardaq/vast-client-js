@@ -310,6 +310,27 @@ export class VASTTracker extends EventEmitter {
   }
 
   /**
+   * Tracks a viewable impression.
+   */
+  trackViewableImpression() {
+    this.trackURLs(this.ad.viewableImpressionURLTemplates);
+  }
+
+  /**
+   * Tracks a viewable undetermined impression.
+   */
+  trackViewableUndeterminedImpression() {
+    this.trackURLs(this.ad.viewableUndeterminedImpressionURLTemplates);
+  }
+
+  /**
+   * Tracks a not viewable impression.
+   */
+  trackNotViewableImpression() {
+    this.trackURLs(this.ad.notViewableImpressionURLTemplates);
+  }
+
+  /**
    * Send a request to the URI provided by the VAST <Error> element.
    * If an [ERRORCODE] macro is included, it will be substitute with errorCode.
    *

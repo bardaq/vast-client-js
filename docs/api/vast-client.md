@@ -21,7 +21,7 @@ All the parameters are optional.
 #### Example
 To get an instance of `VASTClient`, simply import it and create one using the constructor:
 ```Javascript
-import { VASTClient } from 'vast-client'
+import { VASTClient } from '@bardaq/vast-client'
 
 // With default values
 const vastClient = new VASTClient();

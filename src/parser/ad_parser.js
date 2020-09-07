@@ -59,6 +59,37 @@ function parseInLine(inLineElement) {
         ad.impressionURLTemplates.push(parserUtils.parseNodeText(node));
         break;
 
+      case 'ViewableImpression': {
+        const viewableElement = parserUtils.childByName(node, 'Viewable');
+        if (viewableElement) {
+          ad.viewableImpressionURLTemplates.push(
+            parserUtils.parseNodeText(viewableElement)
+          );
+        }
+
+        const viewUndeterminedElement = parserUtils.childByName(
+          node,
+          'ViewUndetermined'
+        );
+        if (viewUndeterminedElement) {
+          ad.viewableUndeterminedImpressionURLTemplates.push(
+            parserUtils.parseNodeText(viewUndeterminedElement)
+          );
+        }
+
+        const notViewUndeterminedElement = parserUtils.childByName(
+          node,
+          'NotViewable'
+        );
+        if (notViewUndeterminedElement) {
+          ad.notViewableImpressionURLTemplates.push(
+            parserUtils.parseNodeText(notViewUndeterminedElement)
+          );
+        }
+
+        break;
+      }
+
       case 'Creatives':
         parserUtils
           .childrenByName(node, 'Creative')

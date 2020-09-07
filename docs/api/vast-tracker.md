@@ -24,7 +24,7 @@ To get an instance of `VASTTracker`, simply import it and create one using the c
 import {
   VASTClient,
   VASTTracker
-} from 'vast-client'
+} from '@bardaq/vast-client'
 
 // With a client instance
 const vastClient = new VASTClient();
