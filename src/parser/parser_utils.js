@@ -185,6 +185,19 @@ function mergeWrapperAdData(unwrappedAd, wrapper) {
   unwrappedAd.impressionURLTemplates = wrapper.impressionURLTemplates.concat(
     unwrappedAd.impressionURLTemplates
   );
+
+  unwrappedAd.viewableImpressionURLTemplates = wrapper.viewableImpressionURLTemplates.concat(
+    unwrappedAd.viewableImpressionURLTemplates
+  );
+
+  unwrappedAd.viewableUndeterminedImpressionURLTemplates = wrapper.viewableUndeterminedImpressionURLTemplates.concat(
+    unwrappedAd.viewableUndeterminedImpressionURLTemplates
+  );
+
+  unwrappedAd.notViewableImpressionURLTemplates = wrapper.notViewableImpressionURLTemplates.concat(
+    unwrappedAd.notViewableImpressionURLTemplates
+  );
+
   unwrappedAd.extensions = wrapper.extensions.concat(unwrappedAd.extensions);
 
   unwrappedAd.creatives.forEach(creative => {
